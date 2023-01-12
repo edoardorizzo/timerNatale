@@ -1,0 +1,145 @@
+html{
+    background-color: #3535ec;
+    font-family: 'Livvic', sans-serif;
+    line-height: 1;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 400px;
+    margin: 80px auto 0 auto;
+}
+
+.xmas-stage{
+    position: relative;
+    height: 600px;
+}
+
+.pannel{
+    background-color: #120945;
+    padding: 24px 24px;
+    border-radius: 16px;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+h1{
+    text-align: center;
+    color: #de7eb6;
+    margin-bottom: 24px;
+    font-size: 30px;
+}
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.counter-block{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.counter-block:last-child{
+    color: #f2ad41;
+}
+
+.counter-block-number{
+    font-size: 48px;
+}
+
+.counter-block-label{
+    font-size: 24px;
+}
+
+/* Regali */
+
+.gift{
+    position: absolute;
+    width: 120px;
+}
+
+.gift1{
+    bottom: 0;
+    right: 30px;
+}
+
+.gift2{
+    bottom: 0;
+    right: 132px;
+}
+
+.gift3{
+    bottom: 0;
+    right: 250px;
+}
+
+.ball{
+    position: absolute;
+    width: 80px;
+}
+
+.ball1{
+    top: 340px;
+    left: 125px;
+}
+
+.ball2{
+    top: 300px;
+    left: 214px;
+}
+
+.ball3{
+    top: 405px;
+    left: 188px;
+}
+.ball4{
+    top: 425px;
+    left: 80px;
+}
+
+/* Animazioni */
+
+.gift:hover {
+    animation-name: jingle;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ball:hover{
+    animation-name: bump;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jingle {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes bump {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
